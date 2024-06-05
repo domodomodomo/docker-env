@@ -1,33 +1,26 @@
 services:
   app1:
     build:
-      context: .
-      dockerfile: ./Dockerfile.1
+      context: ./app1
       args:
         - YAJU=${YAJU}
   app2:
     build:
-      context: .
-      dockerfile: ./Dockerfile.2
+      context: ./app2
       args:
         - LAIN=${LAIN}
     depends_on:
       - app1
   app3:
     build:
-      context: .
-      dockerfile: ./Dockerfile.3
+      context: ./app3
     env_file:
       # LIGHT_YAGAMI="夜神月"
-      - ./.env.docker.2
+      - ./.env.run
     depends_on:
       - app2
   app4:
     build:
-      context: .
-      dockerfile: ./Dockerfile.4
-    env_file:
-      # LIGHT_YAGAMI="夜神月"
-      - ./.env.docker.2
+      context: ./app4
     depends_on:
       - app3
