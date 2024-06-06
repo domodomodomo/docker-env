@@ -1,0 +1,4 @@
+services:
+  app:
+    image: debian:12.5-slim
+    command: echo ${PATH}
