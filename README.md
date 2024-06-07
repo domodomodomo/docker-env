@@ -1,4 +1,4 @@
-# Sample Code for Handling Environment Variables in Docker
+# Handling Environment Variables in Docker
 
 
 ## ◯ Documents
