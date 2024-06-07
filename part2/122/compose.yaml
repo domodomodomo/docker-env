@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+    environment:
+      BLUE: ${BLUE}
+      RED: ${RED}
+      GREEN: ${GREEN}
+      YELLOW: ${YELLOW}
