@@ -1,5 +1,7 @@
+#!/bin/bash
+
 #
-# 上記の Dockerfile をビルドし実行する
+# Build and run the above Dockerfile.
 #
 docker image build \
   --no-cache \

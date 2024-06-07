@@ -6,7 +6,7 @@ docker image build \
   --tag app \
   .
 
-# You should pass the environment variable to the container
+# Only define the environment variable BLUE when running the container.
 docker container run \
-  --env MESSAGE="${MESSAGE}" \
+  --env BLUE="Squirtle" \
   app 

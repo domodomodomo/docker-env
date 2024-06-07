@@ -1,32 +1,38 @@
 #
-# 環境変数 JAPANESE, ENGLISH, CHINESE を表示させる
+# Display the environment variables BLUE, RED, GREEN
 #
 FROM debian:12.5-slim
 
-ARG JAPANESE="こんにちは、世界！"
-ARG ENGLISH="Hello, world!"
+ARG BLUE="Squirtle"
+ARG RED="Charmander"
+
+
 
 # 1. RUN export
-RUN export CHINESE="你好，世界！" \
-    && echo "$JAPANESE | $ENGLISH | $CHINESE"
+RUN export GREEN="Bulbasaur" \
+    && echo "'${BLUE}' | '${RED}' | '${GREEN}'"
 #
-# こんにちは、世界！ | Hello, world! | 你好，世界！
+# 'Squirtle' | 'Charmander' | 'Bulbasaur'
 #
+
+
 
 # 2. ARG
-RUN export CHINESE="你好，世界！"
-RUN echo "$JAPANESE | $ENGLISH | $CHINESE"
+RUN export GREEN="Bulbasaur"
+RUN echo "'${BLUE}' | '${RED}' | '${GREEN}'"
 #
-# こんにちは、世界！ | Hello, world! |
+# 'Squirtle' | 'Charmander' | ''
 #
-#   CHINESE は環境変数として保存されていない
-#   RUN コマンドごとにシェルセッションが異なるから
+#   GREEN is not saved as an environment variable
+#   Each RUN command has a different shell session
+
+
 
 # 3. ENV
-ENV JAPANESE="こんにちは、世界！"
-CMD echo "$JAPANESE | $ENGLISH | $CHINESE"
+ENV BLUE="Squirtle"
+CMD echo "'${BLUE}' | '${RED}' | '${GREEN}'"
 #
-# こんにちは、世界！ | | 
+# 'Squirtle' | '' | ''
 #
-#   ENGLISH は環境変数として保存されていない
-#   ARG コマンドで設定した環境変数は CMD には適用されない
+#   RED is not saved as an environment variable
+#   Environment variables set by ARG command are not applied to CMD

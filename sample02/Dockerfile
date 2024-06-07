@@ -1,9 +1,6 @@
 FROM debian:12.5-slim
 
-CMD echo "MESSAGE: '${MESSAGE}'" \
-  && echo "JAPANESE: '${JAPANESE}'"
+CMD echo "BLUE: '${BLUE}'" \
+  && echo "RED: '${RED}'"
 
-# MESSAGE: 'Hello, world!'
-# JAPANESE: '' <--- You can't see the value of JAPANESE
 
-# 問題にしたほうがよいな...
