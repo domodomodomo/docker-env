@@ -1,8 +1,0 @@
-FROM debian:12.5-slim
-
-# ポイント
-#     ARG, ENV は必要ない
-
-# ARG LIGHT_YAGAMI
-# ENV LIGHT_YAGAMI=${LIGHT_YAGAMI}
-CMD echo "LIGHT_YAGAMI: ${LIGHT_YAGAMI}"

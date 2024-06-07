@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+    environment:
+      BLUE: Squirtle
+      RED: Charmander
+      GREEN: Bulbasaur

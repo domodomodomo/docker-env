@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+    env_file:
+      - .env.1
+      - .env.2
+      - .env.3
