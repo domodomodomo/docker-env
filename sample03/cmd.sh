@@ -1,12 +1,13 @@
-# Point
-#   --progress=plain は docker compose コマンドのオプション
-#   --no-cache は docker compose build コマンドのオプション
+#!/bin/bash
+
 docker \
   compose --progress=plain \
-  build --no-cache \
+  build --no-cache
 
 # Point
-#     Without passing the environment variable,
-#     compose.yaml can refer ${MESSAGE}.
-export MESSAGE="Hello, world!"
-docker compose up
+#     Without passing the environment variable ${BLUE} to `docker compose up` command,
+#     you can refer ${BLUE} in the compose.yaml.
+export BLUE="Squirtle"
+docker \
+  compose --env-file .env \
+  up

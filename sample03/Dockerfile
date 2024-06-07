@@ -1,4 +1,5 @@
 FROM debian:12.5-slim
 
-CMD echo "MESSAGE: '${MESSAGE}'" 
-# MESSAGE: 'Hello, world!'
+CMD echo "BLUE: '${BLUE}'" \
+  && echo "RED: '${RED}'" \
+  && echo "GREEN: '${GREEN}'"
