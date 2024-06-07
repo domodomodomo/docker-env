@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        - BLUE=${BLUE}
+        - RED=${RED}
+        - GREEN=${GREEN}
+        - YELLOW=${YELLOW}
