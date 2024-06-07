@@ -1,10 +1,15 @@
 #!/bin/bash
 
-docker image build --tag app .
-
+export RED="Charmander"
+export GREEN="Bulbasaur"
 
 # Point
-#     Without passing the environment variable ${BLUE} to `docker compose up` command,
-#     you CANNOT refer ${BLUE} in the Dockerfile.
-export BLUE="Squirtle"
-docker container run --env-file .env.dev app 
+#     Without passing the environment variable ${GREEN} to `docker compose up` command,
+#     you CANNOT refer ${GREEN} in the Dockerfile.
+docker image build \
+    --tag app \
+    --build-arg BLUE="Squirtle" \
+    --build-arg RED="${RED}" \
+    .
+
+docker container run app 

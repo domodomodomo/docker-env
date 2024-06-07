@@ -1,8 +1,14 @@
-docker image build --tag app .
-
+# Define environment variables
+$env:RED = "Charmander"
+$env:GREEN = "Bulbasaur"
 
 # Point
-#     Without passing the environment variable ${BLUE} to `docker compose up` command,
-#     you CANNOT refer ${BLUE} in the Dockerfile.
-$env:BLUE = "Squirtle"
-docker container run --env-file .env.dev app
+#     Without passing the environment variable ${GREEN} to `docker compose up` command,
+#     you CANNOT refer ${GREEN} in the Dockerfile.
+docker image build `
+    --tag app `
+    --build-arg BLUE="Squirtle" `
+    --build-arg RED="${env:RED}" `
+    .
+
+docker container run app

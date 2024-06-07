@@ -1,10 +1,13 @@
 #!/bin/bash
 
-docker compose build
-
+export RED="Charmander"
+export GREEN="Bulbasaur"
 
 # Point
-#     Without passing the environment variable ${BLUE} to `docker compose up` command,
-#     you CAN refer ${BLUE} in the compose.yaml.
-export BLUE="Squirtle"
-docker compose --env-file .env.dev up
+#     Without passing the environment variable ${GREEN} to `docker compose up` command,
+#     you CAN refer ${GREEN} in the compose.yaml.
+docker compose build \
+    --build-arg BLUE="Squirtle" \
+    --build-arg RED="${RED}"
+
+docker compose up

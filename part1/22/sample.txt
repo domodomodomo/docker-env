@@ -1,0 +1,16 @@
+1.
+    BLUE: 'Squirtle'
+    RED: 'Charmander'
+    GREEN: 'Bulbasaur'
+
+2.
+    BLUE: 'Squirtle'
+    RED: ''
+
+3.
+    BLUE: ''
+    RED: 'Charmander'
+
+4.
+    BLUE: 'Squirtle'
+    RED: 'Charmander'
