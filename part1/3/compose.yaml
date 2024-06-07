@@ -4,5 +4,3 @@ services:
       context: .
     environment:
       BLUE: ${BLUE}
-      RED: ${RED} 
-      GREEN: ${GREEN} # <--- not defined
