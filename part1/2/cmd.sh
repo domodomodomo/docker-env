@@ -1,7 +1,10 @@
-
+#!/bin/bash
 
 docker image build --tag app .
 
-# Only define the environment variable RED when running the container.
+
+# Point
+#     Without passing the environment variable ${BLUE} to `docker compose up` command,
+#     you CANNOT refer ${BLUE} in the Dockerfile.
 export BLUE="Squirtle"
-docker container run --env RED="Charmander" app 
+docker container run --env-file .env.dev app 

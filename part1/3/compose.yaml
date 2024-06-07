@@ -4,3 +4,4 @@ services:
       context: .
     environment:
       BLUE: ${BLUE}
+      RED: ${RED}

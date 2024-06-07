@@ -1,12 +1,9 @@
-# Build the Docker compose without cache
-docker compose `
-  --progress=plain `
-  build --no-cache
+docker compose build
 
-# Set the environment variable BLUE
+
+
+# Point
+#     Without passing the environment variable ${BLUE} to `docker compose up` command,
+#     you CAN refer ${BLUE} in the compose.yaml.
 $env:BLUE = "Squirtle"
-
-# Run the Docker compose with the environment file
-docker compose `
-  --env-file .env `
-  up
+docker compose --env-file .env.dev up
