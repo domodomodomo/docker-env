@@ -1,7 +1,10 @@
 # Build the Docker compose
 docker compose build
 
-# Run the Docker compose with multiple environment files
+# .env is loaded
+docker compose up
+
+# .env is not loaded
 docker compose `
   --env-file .env.1 `
   --env-file .env.2 `
