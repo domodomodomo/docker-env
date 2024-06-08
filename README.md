@@ -4,14 +4,12 @@
 ## ◯ Documents, 文档, ドキュメント
 
 * English
-    * Part 1. not yet
-    * Part 2. not yet
+    * not yet
 * 中文
-    * Part 1. not yet
-    * Part 2. not yet
+    * 还没有
 * Japanese
-    * Part 1. [Docker と Docker Compose における環境変数の挙動 - ARG と ENV - Qiita](https://qiita.com/domodomodomo/items/e0e9af5cb7c40b00759f)
-    * Part 2. [Docker と Docker Compose における環境変数のオプションとプロパティ - Qiita](https://qiita.com/domodomodomo/items/b5cf643a77c576c959ed)
+    * [Docker と Docker Compose の環境変数 - Part 1. ARG と ENV - Qiita](https://qiita.com/domodomodomo/items/e0e9af5cb7c40b00759f)
+    * [Docker と Docker Compose の環境変数 - Part 2. オプションとプロパティ - Zenn](https://zenn.dev/nihao/articles/fac20dd9691f3c)
 
 
 ### ◯ Enviroments, 环境, 環境
