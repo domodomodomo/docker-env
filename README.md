@@ -21,29 +21,6 @@
 
 
 
-### ◯ Sample Usage, 使用示例, 使用例
-
-```
-gh repo clone domodomodomo/docker-env-sample
-cd docker-env-sample/part1/10
-# cd docker-env-sample/part2/111
-
-
-
-#
-# for Bash - macOS, Ubuntu
-#
-bash cmd.sh
-
-
-
-#
-# fro PowerShell - Windows
-#
-powershell .¥cmd.ps1
-```
-
-
 
 ### ◯ Legends, 图例, 凡例
 
