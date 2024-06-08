@@ -1,6 +1,12 @@
 # Handling Environment Variables in Docker
 
 
+Sample Code for Handling Environment Variables in Docker
+
+在 Docker 中处理环境变量的示例代码
+
+Dockerで環境変数を扱うためのサンプルコード
+
 ## ◯ Documents, 文档, ドキュメント
 
 * English
