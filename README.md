@@ -10,13 +10,13 @@ Dockerで環境変数を扱うためのサンプルコード
 ## ◯ Documents, 文档, ドキュメント
 
 * English
-    * [Environment Variables in Docker and Docker Compose - Part 1. ARG and ENV - Hashnode](https://zundamon.hashnode.dev/environment-variables-in-docker-and-docker-compose-part-1-arg-and-env)
-    * [Environment Variables in Docker and Docker Compose - Part 2. Options and Properties - DEV Community](https://dev.to/zundamon/enviroment-variables-in-docker-2od3)
+    * [Env Vars in Docker and Docker Compose - Part 1. ARG and ENV - Hashnode](https://bit.ly/4ebZqtj)
+    * [Env Vars in Docker and Docker Compose - Part 2. Options and Properties - DEV Community](https://bit.ly/3yO7LmG)
 * 中文
     * 还没有
 * Japanese
-    * [Docker と Docker Compose の環境変数 - Part 1. ARG と ENV - Qiita](https://qiita.com/domodomodomo/items/e0e9af5cb7c40b00759f)
-    * [Docker と Docker Compose の環境変数 - Part 2. オプションとプロパティ - Zenn](https://zenn.dev/nihao/articles/fac20dd9691f3c)
+    * [Docker と Docker Compose の環境変数 - Part 1. ARG と ENV - Qiita](https://bit.ly/4aZP3WG)
+    * [Docker と Docker Compose の環境変数 - Part 2. オプションとプロパティ - Zenn](https://bit.ly/4aPiivr)
 
 
 ### ◯ Enviroments, 环境, 環境

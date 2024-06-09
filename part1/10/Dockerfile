@@ -4,8 +4,8 @@ ARG BLUE="Squirtle"
 ARG RED="Charmander"
 
 # 1. RUN export
-RUN export GREEN="Bulbasaur" \
-    && echo "'${BLUE}' | '${RED}' | '${GREEN}'"
+RUN export GREEN="Bulbasaur" && \
+    echo "'${BLUE}' | '${RED}' | '${GREEN}'"
 #
 # A
 #
