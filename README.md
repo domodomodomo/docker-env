@@ -10,7 +10,8 @@ Dockerで環境変数を扱うためのサンプルコード
 ## ◯ Documents, 文档, ドキュメント
 
 * English
-    * not yet
+    * [Environment Variables in Docker and Docker Compose - Part 1. ARG and ENV - Hashnode](https://zundamon.hashnode.dev/environment-variables-in-docker-and-docker-compose-part-1-arg-and-env)
+    * [Environment Variables in Docker and Docker Compose - Part 2. Options and Properties - DEV Community](https://dev.to/zundamon/enviroment-variables-in-docker-2od3)
 * 中文
     * 还没有
 * Japanese
