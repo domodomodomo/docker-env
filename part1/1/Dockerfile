@@ -1,6 +1,6 @@
 FROM debian:12.5-slim
 
-ARG BLUE="Squirtle"
+ARG BLUE
 ARG RED="Charmander"
 
 # 1. RUN export
